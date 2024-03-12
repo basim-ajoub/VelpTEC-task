@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>velpTEC Edutainment | Contact Form</title>
+  <!-- Tailwind -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- contact form style -->
+  <link rel="stylesheet" href="contact-form-style.css">
+</head>
+<body>
+    <div class="contact-page">
+        <div class="contact-page_form-section container mx-auto md:w-5/6">
+           <div class="contact-page_form-section-title section-item">
+             <h1 class="h1">Kontaktformular</h1>
+           </div> 
+           <div class="contact-page_form-section-description text-center section-item">
+                <h2 class="h2">Unser Team unterstützt dich persönlich dabei, die richtige Weiterbildung für dich zu finden.</h2>
+           </div> 
+           <div class="contact-page_form-section-form section-item">
+                <form class="form-box" action="./" method="POST">
+                    <div class="form-row-fields">
+                        <div class="form-field">
+                            <input type="text" id="firstName" name="firstName" class="field" placeholder="Vorname*" required>
+                        </div>
+                        <div class="form-field">
+                            <input type="text" id="lastName" name="lastName" class="field" placeholder="Nachname*" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" id="email" name="email" class="field" placeholder="Email*" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" id="telefonNumber" name="telefonNumber"  placeholder="Telefonnummer*" class="field" required>
+                    </div>
+                    <div class="form-field  form-field-select">
+                        <select id="issue" name="issue" class="field" required>
+                          <option value="" disabled="disabled" selected="selected">Bitte wähle dein Anliegen*</option>
+                          <option value="beratung">Beratung</option>
+                          <option value="beschwerde">Beschwerde</option>
+                          <option value="anfrage">Anfrage</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <textarea id="message" name="message" placeholder="Nachricht" class="field field-textarea"></textarea>
+                    </div>
+                    <div class="form-text">
+                        <p class="p">
+                            Weitere Informationen können Sie der <a href="#" class="link">Datenschutzerklärung</a> entnehmen.
+                        </p>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" class="button">
+                           <span class="hidden sm:block">Senden</span>
+                           <span class="block sm:hidden">Jetzt kontaktieren</span>
+                        </button>
+                    </div>
+                </form>
+           </div> 
+        </div>
+    </div>
+</body>
+</html>
